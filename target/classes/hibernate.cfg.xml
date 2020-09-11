@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.password">admin</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/adminlte</property>
+		<property name="hibernate.connection.username">root</property>
+	     <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="format_sql">true</property>
+		
+		<mapping class = "com.ram.adminlte.model.User"/>
+		<mapping class = "com.ram.adminlte.model.Users"/>
+		<mapping class = "com.ram.adminlte.model.StateMaster"/>
+		<mapping class = "com.ram.adminlte.model.oprators"/>
+		<mapping class = "com.ram.adminlte.model.links"/>
+		<mapping class = "com.ram.adminlte.model.download_list"/>
+				
+		
+		
+	
+		
+	</session-factory>
+</hibernate-configuration>
